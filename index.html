@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="py-5">
+  <div class="container text-center mt-5 pt-5">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I am a Web Developer.</p>
+  </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>Add a brief introduction about yourself here.</p>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2>My Projects</h2>
+    <ul>
+      <li>Project 1 - Description here</li>
+      <li>Project 2 - Description here</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form action="form-handler.php" method="POST">
+      <input class="form-control mb-3" type="text" name="name" placeholder="Your Name" required>
+      <input class="form-control mb-3" type="email" name="email" placeholder="Your Email" required>
+      <textarea class="form-control mb-3" name="message" placeholder="Your Message" required></textarea>
+      <button class="btn btn-dark" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
